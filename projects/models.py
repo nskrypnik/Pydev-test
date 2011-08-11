@@ -31,5 +31,5 @@ class Project(AbstractTask):
     parent = ForeignKey('self')
     
 class Task(AbstractTask):
-    
-    project = ForeignKey(Project)
+    "Simple task model"
+    project = ForeignKey(Project) # just add reference to Project
